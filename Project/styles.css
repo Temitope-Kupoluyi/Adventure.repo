@@ -111,9 +111,9 @@ section {
   flex-direction: column;
   align-items: center;
 }
-/* .row .column img {
-  width: 80%;
-} */
+.row .column img {
+  width: 50%;
+}
 .events .row {
   margin-top: 50px;
 }
@@ -128,6 +128,84 @@ p {
 }
 .events .ctn {
   margin-top: 30px;
+}
+
+.explore {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./images/image03.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.explore-content {
+  width: 60%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.explore-content h1 {
+  font-size: 7vmin;
+}
+.explore-content .line {
+  margin-bottom: 50px;
+}
+.explore-content p {
+  color: rgb(221, 221, 221);
+}
+.explore-content .ctn {
+  margin-top: 40px;
+}
+
+/* .tours .row .column {
+  width: 50%;
+} */
+.content-column {
+  width: 50%;
+}
+.image-column {
+  width: 60%;
+}
+.tours .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.image-gallery img{
+  max-width: 300px;
+  margin: 10px;
+}
+.content-column h1 {
+  font-size: 7vmin;
+  color: #484872;
+}
+.content-column .line {
+  margin-left: -1px;
+}
+.content-column p {
+  padding: 0;
+  margin: 30px auto;
+}
+.content-column .ctn {
+  margin-left: -100px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: #484872;
+  text-align: center;
+}
+.footer p {
+  color: whitesmoke;
+  margin: 20px auto;
 }
 
 /* Mobile Device */
@@ -159,4 +237,48 @@ p {
   .nav-links li {
     margin: 30px auto;
   }
+  /* Events */
+  .row {
+    flex-direction: column;
+  }
+  .row .column {
+    margin: 20px auto;
+  }
+  .column image {
+    max-width: 90%;
+  }
+  /* Explore */
+  .explore-content {
+    width: 100%;
+  }
+  .tours .column {
+    width: 100%;
+  }
+  .image-gallery {
+    justify-content: center;
+    align-items: center;
+  }
+  .image-gallery img {
+    width: 90%;
+  }
+  .footer {
+    padding: 10px;
+  }
+}
+
+/* Animations */
+image {
+  transition: transform .3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.ctn:hover {
+  background: whitesmoke;
+  color: #FC036B;
+  box-shadow: 2px 2px 5px #00000056;
+}
+li:hover {
+  color: #FC036B;
+  cursor: pointer;
 }
